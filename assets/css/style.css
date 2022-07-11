@@ -17,7 +17,7 @@ header{
 }
 
 .header{
-    max-width: 1040px;/* largura maxima */
+    max-width: 1140px;/* largura maxima */
     margin: auto;
     height: 100px;
     display: flex;
@@ -178,7 +178,7 @@ header{
 }
 
 .default .section-body{
-    max-width: 1040px;
+    max-width: 1140px;
     margin: auto;
  }
 
@@ -255,4 +255,90 @@ header{
     margin-top: 10px;
     font-size: 13px;
     color: #999;
+}
+
+
+/* área de projetos*/
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters{
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li{
+    list-style: nome;
+}
+
+.section-projects--filters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #CCC;
+    color: #555;
+    border-bottom: 3px solid #eee;
+    cursor: pointer;
+}
+.section-projects--filters li:hover,
+.section-projects--filters li.active{
+    border-bottom: 3px solid #b28756;
+}
+.section-projects--filters li:first-child {
+    border-left: 0px;
+}
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
 }
