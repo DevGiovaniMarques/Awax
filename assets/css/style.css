@@ -974,3 +974,349 @@ footer{
     font-size:14px;
     text-align:center;
 }
+.menu-opener{
+    display: none;
+}
+@media (min-width:450px) and (max-width:800px){
+
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+        nav{
+            display: none;
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 70vw;
+            height: calc(100vh - 100px);
+            top: 100px;
+            right: 0;
+        }
+
+        .menu ul{
+            flex-direction: column;
+        }
+
+        .menu li a {
+            font-weight: bold;
+            height: 80px;
+            font-size: 27px;
+            margin-left: 50px;
+            border: 0;
+        }
+
+        .menu li.active a{
+            border: 0;
+            color: #B28756;
+        }
+        .section-aboutus{
+            flex-direction: column;
+        }
+
+        .section-aboutus--left{
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+        .section-aboutus--right{
+            width: auto;
+        }
+        .section-services{
+            flex-wrap: wrap;
+        }
+        .section-service{
+            min-width: 50%;
+            margin-bottom: 40px;
+        }
+        .section-service:first-child{
+            border-left: 0;
+        }
+
+
+        .section-team{
+            width: 580px;
+        }
+
+        .section-clients .slide{
+            width: 780px;
+        }
+        .section-clients .sliders-pointers{
+            width: 780px;
+        }
+
+
+        .section-price .section-body{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-price .section-price-area{
+            width: 90%;
+        }
+        
+        .section-price .section-price-area .sliders{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-price .slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            min-width: 80%;
+        }
+
+        .section-book .slidearea{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        .section-book .section-book--left{
+            width: 500px;
+            
+        }
+
+        .section-facts{
+            flex-wrap: wrap;
+        }
+        .section-fact{
+            min-width: 50%;
+            margin-bottom: 40px;
+        }
+        
+}
+
+@media (max-width:450px){
+
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+        nav{
+            display: none;
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 70vw;
+            height: calc(100vh - 100px);
+            top: 100px;
+            right: 0;
+        }
+
+        .menu ul{
+            flex-direction: column;
+        }
+
+        .menu li a {
+            font-weight: bold;
+            height: 60px;
+            font-size: 20px;
+            margin-left: 30px;
+            border: 0;
+        }
+
+        .menu li.active a{
+            border: 0;
+            color: #B28756;
+        }
+
+        .banner h1{
+            font-size: 30px;
+        }
+        .banner h2{
+            font-size: 20px;
+        }
+
+        .section-aboutus{
+            flex-direction: column;
+        }
+
+        .section-aboutus--left{
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+        .section-aboutus--right{
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .section-aboutus--right img{
+            width:100%;
+        }
+        .section-services{
+            flex-wrap: wrap;
+        }
+        .section-service{
+            min-width: 100%;
+            margin-bottom: 40px;
+        }
+        .section-service:first-child{
+            border-left: 0;
+        }
+
+
+        .section-team{
+            width: 280px;
+        }
+
+        .section-projects--filters{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section-projects--photo{
+            width: 320px;
+        }
+
+        .section-projects--photoarea{
+            width: 300px;
+            height: 200px;
+        }
+        
+
+        .section-clients .slide{
+            width: 430px;
+        }
+        .section-clients .sliders-pointers{
+            width: 100%;
+        }
+        .section-clients .section-clients--coments{
+            margin-left: 100px;
+            width: 320px;
+            margin-right: 100px;
+        }
+
+
+        .section-price .section-body{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-price .section-price-area{
+            width: 90%;
+        }
+        
+        .section-price .section-price-area .sliders{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-price .slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            min-width: 80%;
+        }
+
+        .section-book {
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+           
+        }
+        .section-book .slidearea{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             
+           
+        }
+
+        .section-book .section-book--left{
+            width: 400px;
+        }
+        .section-book .section-book--right{
+            width: 400px;
+            
+        }
+
+        .section-facts{
+            flex-wrap: wrap;
+        }
+        .section-fact{
+            min-width: 60%;
+            margin-bottom: 40px;
+        }
+        .section-body .section-contact{
+            width: 450px;
+        }
+
+        .section-contact .section-contact-form{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-contact-form .section-nome-email{
+            width: 400px;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .section-nome-email .nome-email{
+            width: 80%;
+        }
+        .section-contact-form .section-nome-email .nome-email input{
+            width: 350px;
+            padding: 10px;
+        }
+        .section-contact-form .section-message input{
+            padding: 10px;
+            width: 400px;
+            padding: 12px 15px;
+            margin: 8px 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #CCC;
+            font-weight: 600;
+            border: none;
+            border-bottom: 2px solid #CCC;
+            background: transparent;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        }
+        
+        .section-contact-form .section-message{
+            width: 400px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+        .section-map{
+            padding: 0;
+        }
+            .section-map .section-map--info{
+                width: 100%;
+                margin: 0;
+
+            }
+            .footer--area{
+                flex-direction: column-reverse;
+
+            }
+ 
+}
